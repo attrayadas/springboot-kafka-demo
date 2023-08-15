@@ -18,6 +18,7 @@ public class MessageController {
     }
 
     // http:localhost:8080/api/v1/kafka/publish?message=hello world
+    // To get the topic: C:\Users\Attraya\Downloads\kafka>.\bin\windows\kafka-console-consumer.bat --topic attraya --from-beginning --bootstrap-server localhost:9092
     @GetMapping("/publish")
     public ResponseEntity<String> publish(@RequestParam("message") String message){
         kafkaProducer.sendMessage(message);
