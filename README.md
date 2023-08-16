@@ -1,5 +1,7 @@
 # Spring Boot Kafka Demo
 
+A Spring Boot project designed to configure your Kafka environment, manage topics, and facilitate interaction with Kafka through RESTful APIs
+
 ## Steps to Setup
 **1. Download and Install Kafka**
 
