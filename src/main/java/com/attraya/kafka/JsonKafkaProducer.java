@@ -26,7 +26,7 @@ public class JsonKafkaProducer {
 
         Message<User> message = MessageBuilder
                 .withPayload(data)
-                .setHeader(KafkaHeaders.TOPIC, "attraya")
+                .setHeader(KafkaHeaders.TOPIC, "attraya_json")
                 .build();
 
         kafkaTemplate.send(message);

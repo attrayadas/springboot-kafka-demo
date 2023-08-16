@@ -13,4 +13,11 @@ public class KafkaTopicConfig {
         return TopicBuilder.name("attraya")
                 .build();
     }
+
+    // Seperate topic to send only the JSON messages
+    @Bean
+    public NewTopic attrayaJsonTopic(){
+        return TopicBuilder.name("attraya_json")
+                .build();
+    }
 }
